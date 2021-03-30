@@ -35,7 +35,8 @@ div {
   width: 100vw;
   min-height: 2.5em;
   background-color: var(--chetro-cherry);
-  padding-right: 5vw;
+  padding-right: 0;
+  padding-left: 0;
 }
 .content {
   background: var(--grad-bg);
@@ -63,17 +64,23 @@ span.org-name::first-letter {
     0 -0.5px 0 black;
 }
 .main-nav {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   width: 100vw;
-  flex: 1;
   list-style: none;
-  margin: auto;
-  margin-right: 2vw;
+  margin: 0 auto;
+  padding-right: 0;
   padding-left: 0;
 }
 
+.main-nav li {
+  border-right: 1.5px solid var(--cherry-leaf-pickled);
+  text-align: center;
+}
+.main-nav li:last-child {
+  border: 0;
+}
 .main-nav a {
   margin: 10px;
   border-radius: 5px;
