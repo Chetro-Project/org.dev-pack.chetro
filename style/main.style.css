@@ -1,0 +1,85 @@
+@import "./root.style.css";
+
+@keyframes rotate-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  width: 100vw;
+  min-height: 7.5em;
+}
+div {
+  /*border: solid 0.8px #e19dfc;*/
+  min-height: 5em;
+}
+.org-head {
+  float: left;
+  min-width: 15em;
+}
+.logo {
+  width: 5em;
+  float: left;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.r-menu {
+  float: right;
+  min-width: 15em;
+}
+.menu-bar {
+  clear: both;
+  width: 100vw;
+  min-height: 2.5em;
+  background-color: var(--chetro-cherry);
+  padding-right: 5vw;
+}
+.content {
+  background: var(--grad-bg);
+  min-height: 90em;
+  width: 100vw;
+  /*animation: rotate-animation 4s infinite;*/
+}
+
+.footer {
+  min-height: 2.5em;
+  width: 100vw;
+  background-color: var(--chetro-cherry);
+}
+span.org-name {
+  display: inline-block;
+  font-size: 1.3em;
+}
+span.org-name:first-child {
+  font-size: 2em;
+}
+span.org-name::first-letter {
+  color: var(--dark-cherry);
+  font-weight: bolder;
+  text-shadow: 0.5px 0 0 black, 0 0.5px 0 black, -0.5px 0 0 black,
+    0 -0.5px 0 black;
+}
+.main-nav {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  width: 100vw;
+  flex: 1;
+  list-style: none;
+  margin: auto;
+  margin-right: 2vw;
+  padding-left: 0;
+}
+
+.main-nav a {
+  margin: 10px;
+  border-radius: 5px;
+  background: none;
+  color: var(--cherry-leaf-pickled);
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}

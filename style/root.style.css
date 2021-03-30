@@ -1,0 +1,16 @@
+:root {
+  --chetro-cherry: #fcd4d7;
+  --right-cherry: #fcf2f3;
+  --dark-cherry: #ffc2c6;
+  --harizuri: #79520b;
+  --wakakusa: #abc900;
+  --wakame: #e8ec98;
+  --cherry-leaf-pickled: var(--harizuri);
+  --cherry-leaf: var(--wakakusa);
+  --grad-1: linear-gradient(
+    -45deg,
+    rgba(246, 255, 0, 0.8),
+    rgba(255, 0, 161, 0.8)
+  );
+  --grad-bg: linear-gradient(-45deg, var(--wakame), var(--right-cherry));
+}
