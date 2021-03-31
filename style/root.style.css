@@ -13,5 +13,6 @@
     rgba(255, 0, 161, 0.8)
   );
   width: 100vw;
+  font-family: serif;
   --grad-bg: linear-gradient(-45deg, var(--wakame), var(--right-cherry));
 }

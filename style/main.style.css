@@ -10,13 +10,21 @@
   width: 100vw;
   min-height: 7.5em;
 }
+.header a {
+  border-radius: 5px;
+  color: black;
+  background: none;
+  padding: 0.2em;
+  text-decoration: none;
+}
 div {
   /*border: solid 0.8px #e19dfc;*/
-  min-height: 5em;
+  min-height: 2em;
 }
 .org-head {
   float: left;
   min-width: 15em;
+  font-weight: bolder;
 }
 .logo {
   width: 5em;
@@ -33,7 +41,7 @@ div {
 .menu-bar {
   clear: both;
   width: 100vw;
-  min-height: 2.5em;
+  height: 2.4em;
   background-color: var(--chetro-cherry);
   padding-right: 0;
   padding-left: 0;
@@ -68,10 +76,12 @@ span.org-name::first-letter {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   width: 100vw;
+  height: 100%;
   list-style: none;
   margin: 0 auto;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.1em;
 }
 
 .main-nav li {
@@ -82,11 +92,15 @@ span.org-name::first-letter {
   border: 0;
 }
 .main-nav a {
-  margin: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+
+  margin: 0;
   border-radius: 5px;
   background: none;
   color: var(--cherry-leaf-pickled);
   display: block;
-  padding: 15px;
+  padding: 0em;
+  margin-top: 0em;
   text-decoration: none;
 }
