@@ -9,13 +9,12 @@ body {
   margin: 0;
   background-color: white;
   overflow-x: hidden;
+  overflow-y: auto;
   --va: calc((1vw + 1vh) / 2);
   --vad: calc(var(--va) / 10);
   --vac: calc(var(--va) / 100);
   --vam: calc(var(--va) / 1000);
   --default-widow-width: 100vw;
-  overflow-y: auto;
-  font-size: 1.2em;
 }
 .header {
   width: var(--default-widow-width);
