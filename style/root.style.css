@@ -16,3 +16,9 @@
   font-family: serif;
   --grad-bg: linear-gradient(-45deg, var(--wakame), var(--right-cherry));
 }
+.heading.flower::before {
+  content: "꧁꧁꧁";
+}
+.heading.flower::after {
+  content: "꧂꧂꧂";
+}
