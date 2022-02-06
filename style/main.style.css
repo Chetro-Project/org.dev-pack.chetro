@@ -8,6 +8,7 @@
 body {
   margin: 0;
   background-color: white;
+  font-size: 1em;
   overflow-x: hidden;
   overflow-y: auto;
   --va: calc((1vw + 1vh) / 2);
