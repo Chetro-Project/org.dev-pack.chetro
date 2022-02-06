@@ -6,8 +6,8 @@
   display: grid;
   width: calc(var(--default-widow-width) - var(--margin-grid) * 2);
   margin: 0;
-  grid-template-rows: 1fr repeat(3, 0.75em 1fr);
   grid-template-columns: 1fr 0.75em 1fr 0.75em 1fr 0.75em 1fr;
+  grid-template-rows: 1fr repeat(4, 0.75em 1fr);
   margin: var(--margin-grid) var(--margin-grid);
 }
 .card-grid .card-4:not(.main):nth-child(4n-3) {
@@ -46,6 +46,12 @@
 .card-grid .card-4:not(.main):nth-child(16) {
   grid-row: 7 / 8;
 }
+.card-grid .card-4:not(.main):nth-child(17),
+.card-grid .card-4:not(.main):nth-child(18),
+.card-grid .card-4:not(.main):nth-child(19),
+.card-grid .card-4:not(.main):nth-child(20) {
+  grid-row: 9 / 10;
+}
 
 .card-grid .card-4.main.newab {
   grid-column: 1 / 4;
@@ -54,6 +60,10 @@
 .card-grid .card-4.main.sicode {
   grid-column: 5 / 8;
   grid-row: 3 / 6;
+}
+.card-grid .card-4.main.syclox {
+  grid-column: 1 / 4;
+  grid-row: 7 / 10;
 }
 .card-grid .card-4.hid {
   display: hidden;
