@@ -1,0 +1,190 @@
+body {
+  transform: rotate(95deg);
+}
+.chocolate {
+  width: 144.32vw;
+  height: 67.32vw;
+  background-color: #814033;
+  border-bottom: 1.32vw solid #47231c;
+  border-right: 1.32vw solid #3a1d17;
+  border-radius: 0.88vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.chocolate:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 3.3vw;
+  left: 140.8vw;
+  width: 2.2vw;
+  height: 59.4vw;
+  box-shadow: 0 0 2.2vw 2.2vw rgba(0, 0, 0, 0.6);
+}
+.chocolate:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 66.0vw;
+  left: 2.2vw;
+  width: 140.8vw;
+  height: 0;
+  box-shadow: 0 0 2.2vw 2.2vw rgba(0, 0, 0, 0.5);
+}
+
+.block {
+  width: 28.6vw;
+  height: 22.0vw;
+  position: relative;
+  overflow: hidden;
+}
+.block:before {
+  content: "";
+  display: block;
+  width: 17.6vw;
+  height: 11.0vw;
+  position: absolute;
+  top: 5.5vw;
+  left: 5.5vw;
+  box-shadow: inset 0.66vw 1.1vw 2.2vw 0.66vw rgba(71, 35, 28, 0.5);
+  mix-blend-mode: multiply;
+}
+
+.outerTopLeft,
+.outerBottomRight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28.6vw;
+  height: 22.0vw;
+}
+.outerTopLeft:before,
+.outerBottomRight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2.2vw;
+  left: 2.2vw;
+  width: 24.2vw;
+  height: 17.6vw;
+}
+.outerTopLeft:after,
+.outerBottomRight:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.outerTopLeft {
+  mix-blend-mode: screen;
+}
+.outerTopLeft:before {
+  box-shadow: 0 0 0.66vw 1.98vw #945d52;
+}
+.outerTopLeft:after {
+  top: 2.2vw;
+  left: 2.2vw;
+  width: 24.2vw;
+  height: 17.6vw;
+  border-radius: 0.66vw;
+  box-shadow: -1.1vw -1.1vw 0.66vw 0.22vw #814033, inset 0.22vw 0.22vw 0.66vw 0.22vw #a77970;
+}
+
+.outerBottomRight {
+  mix-blend-mode: multiply;
+}
+.outerBottomRight:after {
+  top: 0;
+  left: 0;
+  width: 28.6vw;
+  height: 22.0vw;
+  mix-blend-mode: screen;
+  box-shadow: inset -0.44vw -0.44vw 0.66vw 0.44vw #814033;
+}
+.outerBottomRight:before {
+  box-shadow: 0 0 0.66vw 1.98vw #ba968f, inset 0 0 0.22vw 0.44vw #c0a099;
+}
+
+.innerTopLeft,
+.innerBottomRight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28.6vw;
+  height: 22.0vw;
+}
+.innerTopLeft:after,
+.innerTopLeft:before,
+.innerBottomRight:after,
+.innerBottomRight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5.5vw;
+  left: 5.5vw;
+  width: 17.6vw;
+  height: 11.0vw;
+}
+
+.innerTopLeft {
+  mix-blend-mode: multiply;
+}
+.innerTopLeft:before {
+  width: 19.8vw;
+  height: 13.2vw;
+  top: 4.4vw;
+  left: 4.4vw;
+  box-shadow: 0 0 0.66vw 0.66vw #ba968f;
+}
+.innerTopLeft:after {
+  box-shadow: 0 0 0.33vw 1.32vw #8d6d66;
+}
+
+.innerBottomRight {
+  mix-blend-mode: screen;
+}
+.innerBottomRight:before {
+  box-shadow: 0 0 0.33vw 1.32vw #945d52;
+}
+.innerBottomRight:after {
+  height: 11.66vw;
+  box-shadow: inset -0.44vw -0.44vw 0.66vw 0.22vw #ad837a;
+}
+
+.edge {
+  width: 2.64vw;
+  box-shadow: 0 0 0.44vw 0.22vw #ece2e0;
+  transform: rotate(0.75rad);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 1.32vw;
+  left: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 143.0vw;
+  height: 66.0vw;
+  background-image: radial-gradient(
+    ellipse at 1.1vw 0vw,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.15)
+  );
+}
+.overlay:after {
+  content: "";
+  position: absolute;
+  width: 143.0vw;
+  height: 66.0vw;
+  mix-blend-mode: lighten;
+  background-image: radial-gradient(
+    circle at 15.4vw 40vw,
+    rgba(255, 255, 255, 0.05) 5%,
+    rgba(255, 255, 255, 0) 40%
+  );
+}
